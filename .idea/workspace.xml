@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e26c833-7534-4261-9548-396a981034e2" name="Changes" comment="Added empty repo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AnagramFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CommandFunction.java" afterDir="false" />
+    <list default="true" id="5e26c833-7534-4261-9548-396a981034e2" name="Changes" comment="Added tests for anagram components and basic interfaces">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FunctionEnum.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/VowelsFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AnagramFunctionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AnagramFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AnagramFunction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +21,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -164,7 +164,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694677862163</updated>
       <workItem from="1694677864187" duration="17088000" />
-      <workItem from="1694707538835" duration="5541000" />
+      <workItem from="1694707538835" duration="7134000" />
     </task>
     <task id="LOCAL-00001" summary="Added empty repo">
       <created>1694707318977</created>
@@ -180,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694707702935</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added tests for anagram components and basic interfaces">
+      <created>1694715973138</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694715973138</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,17 +195,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added empty repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added empty repo" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/AnagramFunction.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added tests for anagram components and basic interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests for anagram components and basic interfaces" />
   </component>
 </project>
