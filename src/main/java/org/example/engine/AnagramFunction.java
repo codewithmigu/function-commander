@@ -1,4 +1,4 @@
-package org.example;
+package org.example.engine;
 
 import java.util.*;
 import java.util.function.Function;
@@ -11,7 +11,7 @@ public class AnagramFunction implements CommandFunction {
 
     @Override
     public boolean isConditionFulfilled(List<String> input) {
-        if (input.isEmpty() || input.size() == 1) {
+        if (input.isEmpty()) {
             return Boolean.TRUE;
         }
 

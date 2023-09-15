@@ -1,4 +1,4 @@
-package org.example;
+package org.example.engine;
 
 import java.util.*;
 import java.util.stream.IntStream;
@@ -14,7 +14,7 @@ public class VowelsFunction implements CommandFunction {
 
     @Override
     public boolean isConditionFulfilled(List<String> input) {
-        if (input.size() <= 1) {
+        if (input.isEmpty()) {
             return Boolean.TRUE;
         }
 

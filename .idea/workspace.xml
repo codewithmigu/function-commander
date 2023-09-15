@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e26c833-7534-4261-9548-396a981034e2" name="Changes" comment="Added implementation for anagram feature and other feature for counting number of vowels">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FunctionEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    <list default="true" id="5e26c833-7534-4261-9548-396a981034e2" name="Changes" comment="Added working CLI. Feels like highschool again">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/InputValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ui/Commands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ui/MessageConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ui/Orchestrator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AnagramFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/engine/AnagramFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CommandFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/engine/CommandFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FunctionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ui/FunctionEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VowelsFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/engine/VowelsFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AnagramFunctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AnagramFunctionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +25,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -83,7 +90,7 @@
       <module name="function-commander" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,7 +102,7 @@
       <module name="function-commander" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,7 +117,7 @@
       <module name="function-commander" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,7 +133,7 @@
       <module name="function-commander" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +145,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnagramFunctionTest.isConditionFulfilled.[2] [abcd, badc, efgh], false" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="[engine:junit-jupiter]/[class:org.example.AnagramFunctionTest]/[test-template:isConditionFulfilled(java.util.List, boolean)]/[test-template-invocation:#2]" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="function-commander" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,7 +169,7 @@
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.AnagramFunctionTest.findAllWithConditionFulfilled" />
         <item itemvalue="JUnit.AnagramFunctionTest" />
-        <item itemvalue="JUnit.AnagramFunctionTest.isConditionFulfilled.[2] [abcd, badc, efgh], false" />
+        <item itemvalue="JUnit.[engine:junit-jupiter]/[class:org.example.AnagramFunctionTest]/[test-template:isConditionFulfilled(java.util.List, boolean)]/[test-template-invocation:#2]" />
         <item itemvalue="JUnit.AnagramFunctionTest.isConditionFulfilled" />
       </list>
     </recent_temporary>
@@ -176,7 +183,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694677862163</updated>
       <workItem from="1694677864187" duration="17088000" />
-      <workItem from="1694707538835" duration="10259000" />
+      <workItem from="1694707538835" duration="17778000" />
     </task>
     <task id="LOCAL-00001" summary="Added empty repo">
       <created>1694707318977</created>
@@ -206,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694717550924</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added working CLI. Feels like highschool again">
+      <created>1694720810425</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694720810425</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +230,7 @@
     <MESSAGE value="Added empty repo" />
     <MESSAGE value="Added tests for anagram components and basic interfaces" />
     <MESSAGE value="Added implementation for anagram feature and other feature for counting number of vowels" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added implementation for anagram feature and other feature for counting number of vowels" />
+    <MESSAGE value="Added working CLI. Feels like highschool again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added working CLI. Feels like highschool again" />
   </component>
 </project>
